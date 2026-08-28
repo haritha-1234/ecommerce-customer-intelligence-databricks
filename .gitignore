@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OS
+.DS_Store
+
+# Data
+data/*.csv
+data/*.csv.zip
+
+# Jupyter
+.ipynb_checkpoints/
