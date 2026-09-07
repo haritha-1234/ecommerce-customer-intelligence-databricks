@@ -222,6 +222,7 @@ __marimo__/
 
 # Data
 data/*.csv
+data/Ecommerce.csv
 data/*.csv.zip
 
 # Jupyter
