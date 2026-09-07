@@ -225,10 +225,10 @@ The Databricks-hosted LLM endpoint was unavailable in the Free Edition workspace
 ## Repository Structure
 
 ```text
-ecommerce-customer-intelligence/
+ecommerce-customer-intelligence-databricks/
 │
 ├── notebooks/
-│   └── 01_Data_Ingestion_PySpark.py
+│   └── 01_Data_Ingestion_PySpark.ipynb
 │
 ├── data/
 │   └── README.md
