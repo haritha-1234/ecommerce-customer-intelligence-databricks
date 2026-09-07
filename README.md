@@ -10,6 +10,17 @@ The project demonstrates a practical data science workflow in Databricks:
 
 **Raw Data → PySpark Analysis → Feature Engineering → Spark ML → Model Evaluation → MLflow → GenAI Business Insight Prototype**
 
+## Key Results
+
+* Analyzed **25,000** e-commerce sessions using PySpark.
+* Overall purchase rate was **22.46%**.
+* **34.85%** of sessions with an added cart resulted in a purchase.
+* **Long sessions** had the highest purchase rate at **23.62%**.
+* **Product category 6** had the highest purchase rate at **24.68%**.
+* Built a **PySpark ML Logistic Regression** model with an **AUC of 0.7632**.
+* Logged and successfully reloaded the trained model using **MLflow**.
+* Developed a **GenAI prompt prototype** for converting structured analytics into business insights.
+
 ## Objectives
 
 * Analyze e-commerce customer session behavior using PySpark
@@ -34,6 +45,8 @@ The project demonstrates a practical data science workflow in Databricks:
 ## Dataset
 
 The project uses the **Indian E-Commerce Customer Behavior & Purchase** dataset from Kaggle.
+
+**Dataset source:** [Indian E-Commerce Customer Behavior & Purchase](https://www.kaggle.com/datasets/kundanbedmutha/indian-e-commerce-customer-behavior-and-purchase).
 
 The dataset contains 25,000 e-commerce interaction records and 29 columns covering:
 
