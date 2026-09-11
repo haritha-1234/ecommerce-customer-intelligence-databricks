@@ -19,7 +19,6 @@ The project demonstrates a practical data science workflow in Databricks:
 * **Product category 6** had the highest purchase rate at **24.68%**.
 * Built a **PySpark ML Logistic Regression** model with an **AUC of 0.7632**.
 * Logged and successfully reloaded the trained model using **MLflow**.
-* Developed a **GenAI prompt prototype** for converting structured analytics into business insights.
 
 ## Objectives
 
