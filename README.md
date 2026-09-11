@@ -1,6 +1,6 @@
-# E-Commerce Customer Intelligence with PySpark, Databricks & GenAI
+# E-Commerce Customer Intelligence with PySpark, Databricks
 
-An end-to-end e-commerce analytics and machine learning project using **PySpark, Databricks, Spark ML and MLflow**, with a GenAI prompt prototype for converting structured analytics into business insights.
+An end-to-end e-commerce analytics and machine learning project using **PySpark, Databricks, Spark ML and MLflow**.
 
 ## Project Overview
 
@@ -8,7 +8,7 @@ This project analyzes 25,000 e-commerce customer sessions to understand purchasi
 
 The project demonstrates a practical data science workflow in Databricks:
 
-**Raw Data → PySpark Analysis → Feature Engineering → Spark ML → Model Evaluation → MLflow → GenAI Business Insight Prototype**
+**Raw Data → PySpark Analysis → Feature Engineering → Spark ML → Model Evaluation → MLflow**
 
 ## Key Results
 
@@ -29,7 +29,6 @@ The project demonstrates a practical data science workflow in Databricks:
 * Identify high-performing marketing channels and product categories
 * Build a purchase prediction model using Spark ML
 * Track and reload the trained model using MLflow
-* Demonstrate how structured analytical results can be passed to an LLM through a business-focused prompt
 
 ## Technologies
 
@@ -40,7 +39,6 @@ The project demonstrates a practical data science workflow in Databricks:
 * **MLflow**
 * **SQL**
 * **Git / GitHub**
-* **GenAI / LLM Prompting**
 
 ## Dataset
 
@@ -172,19 +170,6 @@ The following were logged:
 
 The logged model was subsequently reloaded from MLflow and used to generate predictions. The reloaded model reproduced the original test accuracy.
 
-## GenAI Component
-
-A small GenAI prototype was developed to demonstrate how structured analytical results can be transformed into a business-oriented LLM prompt.
-
-The session-duration metrics were converted into JSON and inserted dynamically into a prompt containing instructions to:
-
-* Identify key business insights
-* Provide a practical recommendation
-* State an analytical caveat
-* Avoid causal claims
-* Use only the supplied data
-
-The Databricks-hosted LLM endpoint was unavailable in the Free Edition workspace used for this project. Therefore, the GenAI component is presented as a **prompt prototype rather than an executed LLM workflow**.
 
 ## Project Architecture
 
@@ -225,13 +210,6 @@ The Databricks-hosted LLM endpoint was unavailable in the Free Edition workspace
                     │     MLflow       │
                     │ Experiment       │
                     │ Tracking         │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │ GenAI Prompt     │
-                    │ Business Insight │
-                    │ Prototype        │
                     └──────────────────┘
 ```
 
@@ -267,7 +245,6 @@ ecommerce-customer-intelligence-databricks/
 * Numeric category and channel codes are not assigned business meanings without additional documentation.
 * The analysis identifies associations rather than causal relationships.
 * The classification dataset is imbalanced toward non-purchase sessions.
-* The GenAI component was implemented as a prompt prototype because the required Databricks-hosted LLM endpoint was unavailable in the Free Edition workspace.
 
 ## Future Improvements
 
@@ -279,7 +256,6 @@ Possible extensions include:
 * More robust handling of class imbalance
 * Automated model evaluation
 * Deployment of the model through a suitable serving environment
-* Execution of the GenAI component using an available LLM endpoint
 
 ## Author
 
@@ -287,4 +263,4 @@ Possible extensions include:
 
 Data Scientist / Data Analyst
 
-This project was developed as a portfolio project to demonstrate practical experience with PySpark, Databricks, Spark ML, MLflow and GenAI concepts.
+This project was developed as a portfolio project to demonstrate practical experience with PySpark, Databricks, Spark ML and MLflow.
